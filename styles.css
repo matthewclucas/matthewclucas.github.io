@@ -88,9 +88,16 @@ li, a {
     50% { border-color: #f96e46; }
 }
 
-.projects {
-    padding-left: 3.5%;
+.projects-top {
+    display: flex;
+    justify-content: center;
 }
+
+.projects-bottom {
+    display: flex;
+    justify-content: center;
+}
+
 .projects-title {
     text-align: center;
     font-size: 50px;

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "sourcecode";
+    src: url(static/SourceCodePro-Black.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "sourcecode", sans-serif;
+}
+
+body {
+    background-color: #545863;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.menu {
+    margin: auto;
+}
+
+li, a {
+    font-family: "sourcecode", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar {
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-bar li a {
+    transition: all 0.3s ease 0s;
+    padding: 10px 10px;
+}
+
+.nav-bar li a:hover {
+    color: #f96e46;
+}
+
+.main {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+
+.typer {
+    color: white;
+    font-size: 30px;
+
+    width: 710px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #f96e46; }
+}
+
+.projects {
+    padding-left: 3.5%;
+}
+.projects-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "sourcecode";
+    color: white;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    margin: 8px;
+    display: inline-block;
+    width: 500px;
+    background-color: #545863;
+}
+  
+.gallery:hover {
+    background-color: #f96e46;
+    transition: all 0.3s ease 0s;
+    border: 2px solid #f96e46;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.desc:hover {
+    color: #545863;
+}

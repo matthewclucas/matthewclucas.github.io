@@ -160,8 +160,14 @@ li, a {
 .gallery {
     margin: 10px;
     display: inline-block;
-    width: 600px;
+    width: 45%;
     background-color: #545863;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+      width: 100%;
+    }
 }
   
 .gallery:hover {

@@ -134,6 +134,16 @@ li, a {
     }
 }
 
+.btn {
+    background-color: transparent;
+    border: none !important;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 85%;
+    left: 48%;
+}
+
 #projects {
     text-align: center;
 }

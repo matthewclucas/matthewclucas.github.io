@@ -166,7 +166,7 @@ li, a {
 
 @media screen and (max-width: 1000px) {
     .gallery {
-      width: 100%;
+      width: 75%;
     }
 }
   
@@ -269,7 +269,7 @@ li, a {
     justify-content: center;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    grid-column-gap: 100px;
+    grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
   

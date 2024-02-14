@@ -3,6 +3,7 @@
     src: url(static/SourceCodePro-Black.ttf);
 }
 
+/* Global */
 html {
     scroll-behavior: smooth;
 }
@@ -14,66 +15,84 @@ html {
     font-family: "sourcecode", sans-serif;
 }
 
-body {
-    background-color: #545863;
-}
-
-header {
-    position: absolute;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 20px;
-}
-
-.menu {
+.container {
+    width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
-li, a {
-    font-family: "sourcecode", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar {
-    list-style: none;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.nav-bar li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.nav-bar li a {
-    transition: all 0.3s ease 0s;
-    padding: 10px 10px;
-}
-
-.nav-bar li a:hover {
+span {
     color: #f96e46;
 }
 
-.main {
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "sourcecode";
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Header */
+header {
+    background-color: #545863;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.icons {
+    float: left;
+}
+
+header img {
+    height: 50px;
+}
+
+header #nav-bar {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: #f96e46;
+    transition: all 0.3s ease 0s;
+}
+
+/* Showcase */
+#showcase {
+    background-color: #545863;
+}
+
+#showcase .container {
+    background-color: #545863;
     height: 100vh;
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
   }
 
 .typer {
     color: white;
-    font-size: 189%;
-
+    font-size: 30px;
     width: 220px;
     animation: typing 2s steps(12), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -92,177 +111,59 @@ li, a {
     50% { border-color: #f96e46; }
 }
 
-.arrow {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: rotate(1800deg);
-    cursor: pointer;
-}
-
-.arrow span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-
-.arrow span:nth-child(2) {
-    animation-delay: -0.2s;
-}
-
-.arrow span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
-}
-
-.btn {
-    background-color: transparent;
-    border: none !important;
-    width: 50px;
-    height: 100px;
-    position: absolute;
-    top: 85%;
-    left: 48%;
-}
-
+/* Projects */
 #projects {
-    text-align: center;
-}
-
-.projects-top {
-    display: inline-block;
-    text-align: center;
-}
-
-.projects-bottom {
-    display: inline-block;
-    text-align: center;
-}
-
-.projects-title {
-    text-align: center;
-    font-size: 40px;
-    font-family: "sourcecode";
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.gallery {
-    margin: 10px;
-    display: inline-block;
-    width: 45%;
     background-color: #545863;
+    text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
-    .gallery {
-      width: 75%;
-    }
+#projects .box {
+    width: 550px;
+    padding: 10px;
+    display: inline-block;
 }
-  
-.gallery:hover {
-    background-color: #f96e46;
-    transition: all 0.3s ease 0s;
-    border: 2px solid #f96e46;
-}
-  
-.gallery img {
+
+.box img {
     width: 100%;
     height: auto;
 }
-  
-.desc {
+
+.box .desc {
     padding: 15px;
     text-align: center;
     color: white;
 }
 
-.desc:hover {
-    color: #545863;
-}
-
+/* About */
 #about {
-    text-align: center;
-    width: 100%;
+    background-color: #545863;
 }
 
-.about-me {
-    text-align: center;
-    font-size: 40px;
-    font-family: "sourcecode";
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 150px;
+#about .body {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 40% 60%;
+    column-gap: 5px;
 }
 
-.about-container {
-    display: flex;
-    justify-content: center;
+#about .profile-pic {
+    margin-left: 20%;
 }
 
-.about-desc {
-    width: 90%;
-    text-align: left;
-    font-size: 20px;
-    font-family: "sourcecode";
-    color: white;
-    padding-left: 10%;
-    padding-right: 20%;
-    padding-top: 150px;
-
+#about .desc {
+    margin-left: 100px;
 }
 
-.about-desc span {
-    color: #f96e46;
-}
-
-.profile-pic {
-    max-width: auto;
-    padding-left: 20%;
-    float: left;
-}
-
-.skills-title {
-    text-align: center;
-    font-size: 40px;
-    font-family: "sourcecode";
-    color: white;
-    margin-top: 150px;
-    margin-bottom: 30px;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 500px;
+/* Skills */
+#skills {
+    background-color: #545863;
     text-align: center;
 }
 
-.column h2 {
+#skills h2 {
     width: 200px;
     font-size: 25px;
-    margin-left: 35%;
+    margin: auto;
     text-align: center;
     background-color: #f96e46;
     color: #545863;
@@ -270,11 +171,15 @@ li, a {
     border-radius: 10px;
 }
 
-.column img {
-    width: 100px;
+#skills .col {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
 }
 
-.code-icons {
+#skills .code-icons {
     display: grid;
     padding-top: 30px;
     justify-content: center;
@@ -283,15 +188,156 @@ li, a {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
-  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+#skills .code-icons img {
+    height: 100px;
 }
-  
-@media screen and (max-width: 1100px) {
-    .column {
+
+/* Contact */
+#contact {
+    background-color: #545863;
+    padding-bottom: 50px;
+}
+
+#contact h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+ 
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+   
+   input, textarea {
+      border:0; outline:0;
+      padding: 1em;
+      border-radius: 8px;
+      display: block;
       width: 100%;
+      margin-top: 1em;
+      font-family: "sourcecode", sans-serif;
+      resize: none;
+    }
+}
+   
+#input-submit {
+    color: white; 
+    background: #f96e46;
+    cursor: pointer;
+     
+}
+   
+textarea {
+    height: 126px;
+}
+ 
+.half {
+   float: left;
+   width: 48%;
+   margin-bottom: 1em;
+}
+ 
+.right { 
+    width: 50%; 
+}
+ 
+.left {
+      margin-right: 2%; 
+}
+
+/* Footer */
+footer {
+    background-color: #f96e46;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    width: 50px;
+    background-color: #545863;
+    border-radius: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 850px) {
+    header {
+        margin: auto;
+        text-align: center;
+    }
+    
+    header li {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    header .icons {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    #projects .box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    #about {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    #about .body {
+        display: block;
+    }
+
+    #about .profile-pic {
+        margin: auto;
+    }
+    
+    #about .desc {
+        margin: auto;
+        text-align: center;
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #skills .col {
+      width: 100%;
+    }
+
+    #skills .code-icons {
+        display: grid;
+        padding-top: 30px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 50px);
+        grid-template-rows: repeat(3, 100px);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    }
+    
+    #skills .code-icons img {
+        height: 75px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #contact .half {
+       width: 100%; 
+       float: none;
+       margin-bottom: 0; 
     }
 }

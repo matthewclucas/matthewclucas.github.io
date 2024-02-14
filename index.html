@@ -1,107 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Lucas</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav class="menu">
-            <ul class="nav-bar">
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="contact.html">CONTACT ME</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matthew Lucas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/matthew-lucas-43abab291/">
+                        <img src="images/linkedin-icon.png" alt="">
+                    </a>
+                    <a target="_blank" href="https://github.com/matthewclucas">
+                        <img src="images/git-icon.png" alt="">
+                    </a>
+                    <a href=""><img src="" alt=""></a>
+                </div>
+                <div id="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="">PROJECTS</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">SKILLS</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-    <section class="main">
-        <div class="typer">Hi I'm Matt!</div>
-    </section>
+        <section id="showcase">
+            <div class="container">
+                <div class="typer">Hi I'm Matt!</div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h1 class="projects-title">Projects</h1>
-        <div class="projects-top">
-            <div class="gallery">
-                <a target="_blank" href="">
-                <img src="images/Program-Code-Feature-Image.jpg" alt="This is my first project." width="600" height="400">
+        <section id="projects">
+            <div class="container">
+                <h1 class="title">Projects</h1>
+                <div class="box">
+                    <a target="_blank" href="">
+                        <img src="images/Program-Code-Feature-Image.jpg" alt="This is my first project." width="600" height="400">
+                    </a>
+                    <div class="desc">Project 1</div>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="">
+                        <img src="images/Program-Code-Feature-Image.jpg" alt="This is my first project." width="600" height="400">
+                        </a>
+                        <div class="desc">Project 2</div>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="">
+                        <img src="images/Program-Code-Feature-Image.jpg" alt="This is my first project." width="600" height="400">
+                    </a>
+                    <div class="desc">Project 3</div>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="">
+                        <img src="images/Program-Code-Feature-Image.jpg" alt="This is my first project." width="600" height="400">
+                    </a>
+                    <div class="desc">Project 4</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h1 class="title">Get to Know Me</h1>
+                <div class="body">
+                    <div class="profile-pic">
+                        <img src="images/portfolio-pic.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>I am a young <span>developer</span> with a love for all things <span>technology</span>. I am working toward a career of <span>full-stack</span> development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h1 class="title">Skills</h1>
+                <div class="col">
+                    <h2>Front End</h2>
+                    <div class="code-icons">
+                        <img src="images/html-icon.png" alt="">
+                        <img src="images/css-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Back End</h2>
+                    <div class="code-icons">
+                        <img src="images/py-icon.png" alt="">
+                        <img src="images/java-icon.png" alt="">
+                        <img src="images/sql-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1 class="title">Contact</h1>
+                <div class="form">
+                    <form class="cf">
+                    <div class="half left cf">
+                        <input type="text" id="input-name" placeholder="Name">
+                        <input type="email" id="input-email" placeholder="Email">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    </div>  
+                    <input type="submit" value="Submit" id="input-submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <a target="_blank" href="https://www.linkedin.com/in/matthew-lucas-43abab291/">
+                    <img src="images/linkedin-icon.png" alt="">
                 </a>
-                <div class="desc">Project 1</div>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="">
-                <img src="images/Program-Code-Feature-Image.jpg" alt="This is my second project." width="600" height="400">
+                <a target="_blank" href="https://github.com/matthewclucas">
+                    <img src="images/git-icon.png" alt="">
                 </a>
-                <div class="desc">Project 2</div>
+                <p>&copy; Matthew Lucas 2024</p>
             </div>
-        </div>
-        <div class="projects-bottom">
-            <div class="gallery">
-                <a target="_blank" href="">
-                <img src="images/Program-Code-Feature-Image.jpg" alt="This is my third project." width="600" height="400">
-                </a>
-                <div class="desc">Project 3</div>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="">
-                <img src="images/Program-Code-Feature-Image.jpg" alt="This is my fourth project." width="600" height="400">
-                </a>
-                <div class="desc">Project 4</div>
-        </div>
-    </section>
-
-    <div class="arrow">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <a href="#projects">
-        <button class="btn" type="button"></button>
-    </a>
-
-    <section id="about">
-        <h1 class="about-me">Get to Know Me</h1>
-        <div class="about-container">
-            <img class="profile-pic" src="images/portfolio-pic.png" alt="">
-            <div class="about-desc">
-                <p>I am a young <span>developer</span> with a love for all things <span>technology</span>. I am working toward a career of <span>full-stack</span> development.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h1 class="skills-title">Skills</h1>
-        <div class="skills-row">
-            <div class="column">
-              <h2>Front End</h2>
-              <div class="code-icons">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-              </div>
-            </div>
-            <div class="column">
-              <h2>Back End</h2>
-              <div class="code-icons">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-                <img src="images/code-icon.png" alt="">
-              </div>
-            </div>
-          </div>
-    </section>
-
-    <footer>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

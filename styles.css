@@ -194,7 +194,7 @@ header a:hover {
     height: 100px;
 }
 
-/* Contact */
+/* Contact 
 #contact {
     background-color: #545863;
     padding-bottom: 50px;
@@ -247,6 +247,7 @@ textarea {
 .left {
       margin-right: 2%; 
 }
+*/
 
 /* Footer */
 footer {
@@ -335,6 +336,7 @@ footer p {
 
 }
 
+/*
 @media (max-width: 480px) {
     #contact .half {
        width: 100%; 
@@ -342,3 +344,4 @@ footer p {
        margin-bottom: 0; 
     }
 }
+*/
